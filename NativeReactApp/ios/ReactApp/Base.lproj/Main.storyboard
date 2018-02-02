@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BC8-8p-QZV">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Native-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner_swift" translatesAutoresizingMaskIntoConstraints="NO" id="Zm7-eG-iq8">
+                                <rect key="frame" x="105" y="309" width="165" height="48"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Zm7-eG-iq8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="FcA-zt-B99"/>
+                            <constraint firstItem="Zm7-eG-iq8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ub1-bu-bpv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Native" id="78P-EE-NYc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-503.19999999999999" y="886.50674662668678"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ZFH-9K-Vo2">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="BC8-8p-QZV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UQy-NX-4F3">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9iU-X3-4Rp" kind="relationship" relationship="viewControllers" id="eCN-ch-dYn"/>
+                        <segue destination="L8u-Ga-xJA" kind="relationship" relationship="viewControllers" id="iy5-WQ-hcr"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Udd-AK-ynA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-292" y="116"/>
+        </scene>
+        <!--React-->
+        <scene sceneID="yHR-Af-lXs">
+            <objects>
+                <viewController id="9iU-X3-4Rp" customClass="RNViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gyh-OS-cZi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="EeA-eT-0sb"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="React" image="icon_react" id="j1R-oo-KLn"/>
+                    <navigationItem key="navigationItem" title="React" id="85J-30-DJA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y3k-fI-zBq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="359.19999999999999" y="886.50674662668678"/>
+        </scene>
+        <!--Native-->
+        <scene sceneID="ESv-Qt-p6f">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="L8u-Ga-xJA" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Native" image="icon_swfit" id="9Mf-eT-Uf2"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iT5-ba-HDy">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="or4-QT-VVH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="05Q-Uj-eHB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1300" y="887"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="banner_swift" width="165" height="48"/>
+        <image name="icon_react" width="30" height="26"/>
+        <image name="icon_swfit" width="14" height="15"/>
+    </resources>
+</document>
