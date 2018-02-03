@@ -8,5 +8,6 @@ import {
 // import LayoutAlign from './src/Flex'
 import router from './src/Navigation'
 
+
 // 整体js模块的名称
 AppRegistry.registerComponent('MyReactNativeApp', () => router);

@@ -33,9 +33,9 @@ export default class CustomButton extends React.Component {
   };
   
   render() {
+	
 	return (
 	  <View style={styles.container}>
-		
 		<Text style={styles.text} >{this.state.countDown}</Text>
 	 
 		<Button ref="confirm_button" title="确定" onPress={this.handler}/>

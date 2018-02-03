@@ -18,5 +18,6 @@
 
 ## TODO:
 - [x] package shell
+- [ ]  crash: .git watchman 崩溃
 - [ ] flex 布局
 - [ ] ES5 ES6 写法对照

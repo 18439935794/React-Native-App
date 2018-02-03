@@ -32,6 +32,12 @@ var MOCKED_DATA = [
 	subtitle: 'Component Life Cycle',
 	screen: 'LifecycleComponent',
   },
+  {
+	key: 4,
+	title: 'Zoom Image',
+	subtitle: '',
+	screen: 'ZoomComponent',
+  },
 ];
 
 export default class HomeTableView extends React.Component {
