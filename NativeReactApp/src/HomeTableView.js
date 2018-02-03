@@ -17,8 +17,8 @@ var MOCKED_DATA = [
   {
 	key: 1,
 	title: 'Flexbox',
-	subtitle: 'Align Items',
-	screen: 'LayoutAlign',
+	subtitle: 'Complex Layout',
+	screen: 'LayoutComplex',
   },
   {
 	key: 2,
@@ -26,7 +26,12 @@ var MOCKED_DATA = [
 	subtitle: 'Some Customize Views',
 	screen: 'CustomButton',
   },
-
+  {
+	key: 3,
+	title: 'Life Cycle',
+	subtitle: 'Component Life Cycle',
+	screen: 'LifecycleComponent',
+  },
 ];
 
 export default class HomeTableView extends React.Component {
@@ -62,7 +67,7 @@ export default class HomeTableView extends React.Component {
     
     _selectCell = (item, idx) => {
         const { navigate } = this.props.navigation;
-        navigate(item.screen, { name: 'hi' });
+        navigate(item.screen);
         console.log(item.title);
     };
 }

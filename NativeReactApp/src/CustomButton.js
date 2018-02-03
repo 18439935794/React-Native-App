@@ -10,29 +10,25 @@ export default class CustomButton extends React.Component {
   
   constructor(props) {
 	super(props);
-	this.state = { countDown: 10 };
- 
-	// 每1000毫秒对showText状态做一次取反操作
-	// setInterval(() => {
-	//   this.setState(previousState => {
-	//     // console.log(previousState.countDown);
-	// 	if (previousState.countDown === 1) {
-	// 	  return {countDown: 10}
-	// 	};
-	// 	return { countDown: --previousState.countDown };
-	//   });
-	// }, 1000);
-	
+	this.state = { countDown: 3 };
+		
   }
   
   handler = () => {
 	this.refs.confirm_button.disable();
-
-	this.timer = setTimeout(() => {
-	  this.refs.confirm_button.enable();
-	  alert(this.refs.confirm_button.props.title)
-	}, 2000);
 	
+	// 每1000毫秒对showText状态做一次取反操作
+	this.timer = setInterval(() => {
+	  this.setState(previousState => {
+		if (previousState.countDown === 1) {
+		  alert(this.refs.confirm_button.props.title)
+		  this.refs.confirm_button.enable();
+		  clearInterval(this.timer);
+		  return {countDown: 3}
+		};
+		return { countDown: --previousState.countDown };
+	  });
+	}, 1000);
 	
   };
   
@@ -53,7 +49,6 @@ export default class CustomButton extends React.Component {
   }
 }
 
-
 const styles = StyleSheet.create({
   container: {
 	flex: 1,
@@ -62,6 +57,9 @@ const styles = StyleSheet.create({
 	backgroundColor: '#F5FCFF',
   },
   text: {
-  	// flex: 5,
+	// backgroundColor:
+	color: 'skyblue',
+	marginBottom: 100,
+	fontSize: 50,
   },
 });

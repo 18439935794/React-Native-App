@@ -8,6 +8,7 @@
 
 #import "RNViewController.h"
 #import <React/RCTRootView.h>
+#import "AppDelegate.h"
 
 @interface RNViewController ()
 
@@ -16,7 +17,14 @@
 @implementation RNViewController
 
 - (void)loadView {
-    NSURL *jsCodeLocation = [NSURL URLWithString:@"http://localhost:8081/index.bundle?platform=ios"];
+    
+    NSURL *jsCodeLocation = nil;
+    if (IS_DEV) {
+        jsCodeLocation = [NSURL URLWithString:@"http://localhost:8081/index.bundle?platform=ios"];
+    } else {
+        jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"bundle/main.jsbundle" withExtension:nil];
+    }
+
     RCTRootView *root = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation moduleName:@"MyReactNativeApp" initialProperties:nil launchOptions:nil];
     self.view = root;
 }

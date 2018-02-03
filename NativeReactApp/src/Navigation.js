@@ -6,16 +6,18 @@ import {
   StackNavigator,
 } from 'react-navigation';
 
-import LayoutJustify, {LayoutAlign} from './Flex';
+import LayoutJustify, {LayoutComplex} from './Flex';
 import CustomButton from './CustomButton';
 import HomeTableView from './HomeTableView';
+import LifecycleComponent from './LifecycleComponent';
 
 const router = StackNavigator({
   Home: {screen: HomeTableView},
   
-  LayoutAlign: {screen: LayoutAlign},
   LayoutJustify: {screen: LayoutJustify},
+  LayoutComplex: {screen: LayoutComplex},
   CustomButton: {screen: CustomButton},
+  LifecycleComponent: {screen: LifecycleComponent},
 });
 
 export default router

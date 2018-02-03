@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+#ifdef DEBUG
+#define IS_DEV YES
+
+#else
+#define IS_DEV NO
+
+#endif
+
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;

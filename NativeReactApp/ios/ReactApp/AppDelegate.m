@@ -15,9 +15,14 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    NSURL *jsCodeLocation = [NSURL URLWithString:@"http://localhost:8081/index.bundle?platform=ios"];
+    
+    NSURL *jsCodeLocation = nil;
+    if (IS_DEV) {
+        jsCodeLocation = [NSURL URLWithString:@"http://localhost:8081/index.bundle?platform=ios"];
+    } else {
+            jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"bundle/main.jsbundle" withExtension:nil];
+    }
     RCTRootView *root = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation moduleName:@"MyReactNativeApp" initialProperties:nil launchOptions:nil];
 
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
@@ -26,6 +31,8 @@
     vc.view = root;
     self.window.rootViewController = vc;
     [self.window makeKeyAndVisible];
+
+    
     return YES;
 }
 
