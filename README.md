@@ -9,9 +9,14 @@
 
 - 教程: 
 	- 《React Native学习笔记》: [https://github.com/crazycodeboy/RNStudyNotes/](https://github.com/crazycodeboy/RNStudyNotes/)
+	- 贾鹏辉的技术博客: [http://www.devio.org/](http://www.devio.org/)
 
 - 布局: [https://www.jianshu.com/p/688b9108a922](https://www.jianshu.com/p/688b9108a922)
 
+- imooc 课程
+	- ReactNative基础与入门: [https://www.imooc.com/learn/808](https://www.imooc.com/learn/808)
 
 ## TODO:
-- [ ] package shell
+- [x] package shell
+- [ ] flex 布局
+- [ ] ES5 ES6 写法对照
