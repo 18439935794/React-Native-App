@@ -11,3 +11,7 @@
 	- 《React Native学习笔记》: [https://github.com/crazycodeboy/RNStudyNotes/](https://github.com/crazycodeboy/RNStudyNotes/)
 
 - 布局: [https://www.jianshu.com/p/688b9108a922](https://www.jianshu.com/p/688b9108a922)
+
+
+## TODO:
+- [ ] package shell

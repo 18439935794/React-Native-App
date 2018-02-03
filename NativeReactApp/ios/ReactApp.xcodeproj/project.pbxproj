@@ -15,7 +15,7 @@
 		3C17C334202094770059AFF5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C17C333202094770059AFF5 /* main.m */; };
 		3C17C33E202094770059AFF5 /* ReactAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C17C33D202094770059AFF5 /* ReactAppTests.m */; };
 		3C17C34A202097A90059AFF5 /* RNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C17C349202097A90059AFF5 /* RNViewController.m */; };
-		3CECFD672024B6FC003C3110 /* bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3CECFD662024B6FC003C3110 /* bundle */; };
+		3CECFD6B20256A49003C3110 /* bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3CECFD6A20256A49003C3110 /* bundle */; };
 		583AF3232E918B0E5EF22F5F /* libPods-ReactApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6728C29EFAE4038EC09E0A12 /* libPods-ReactApp.a */; };
 /* End PBXBuildFile section */
 
@@ -46,7 +46,7 @@
 		3C17C33F202094770059AFF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C17C348202097A90059AFF5 /* RNViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNViewController.h; sourceTree = "<group>"; };
 		3C17C349202097A90059AFF5 /* RNViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNViewController.m; sourceTree = "<group>"; };
-		3CECFD662024B6FC003C3110 /* bundle */ = {isa = PBXFileReference; lastKnownFileType = folder; name = bundle; path = "../../../../React-Native-App/NativeReactApp/ios/bundle"; sourceTree = "<group>"; };
+		3CECFD6A20256A49003C3110 /* bundle */ = {isa = PBXFileReference; lastKnownFileType = folder; path = bundle; sourceTree = "<group>"; };
 		6728C29EFAE4038EC09E0A12 /* libPods-ReactApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		789AAF804927B15AE83BBDE6 /* Pods-ReactApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactApp/Pods-ReactApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,7 +101,7 @@
 		3C17C323202094770059AFF5 /* ReactApp */ = {
 			isa = PBXGroup;
 			children = (
-				3CECFD662024B6FC003C3110 /* bundle */,
+				3CECFD6A20256A49003C3110 /* bundle */,
 				3C17C324202094770059AFF5 /* AppDelegate.h */,
 				3C17C325202094770059AFF5 /* AppDelegate.m */,
 				3C17C327202094770059AFF5 /* ViewController.h */,
@@ -220,7 +220,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CECFD672024B6FC003C3110 /* bundle in Resources */,
+				3CECFD6B20256A49003C3110 /* bundle in Resources */,
 				3C17C331202094770059AFF5 /* LaunchScreen.storyboard in Resources */,
 				3C17C32E202094770059AFF5 /* Assets.xcassets in Resources */,
 				3C17C32C202094770059AFF5 /* Main.storyboard in Resources */,
